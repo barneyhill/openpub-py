@@ -1,0 +1,1433 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Around 60% of individuals with neurodevelopmental disorders (NDD) remain undiagnosed after comprehensive genetic testing, primarily of protein-coding genes",
+    "claim_type": "EXPLICIT",
+    "source": "Around 60% of individuals with neurodevelopmental disorders (NDD) remain undiagnosed after comprehensive genetic testing, primarily of protein-coding genes1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 1, representing established knowledge in the field",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "RNU4-2 encodes the U4 small nuclear RNA (snRNA), which is a critical component of the U4/U6.U5 tri-snRNP complex of the major spliceosome",
+    "claim_type": "EXPLICIT",
+    "source": "RNU4-2 encodes the U4 small nuclear RNA (snRNA), which is a critical component of the U4/U6.U5 tri-snRNP complex of the major spliceosome2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 2, representing established knowledge about RNU4-2 function",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "An 18 base pair region of RNU4-2 mapping to two structural elements in the U4/U6 snRNA duplex (the T-loop and stem III) is severely depleted of variation in the general population",
+    "claim_type": "EXPLICIT",
+    "source": "We identify an 18 base pair region of RNU4-2 mapping to two structural elements in the U4/U6 snRNA duplex (the T-loop and stem III) that is severely depleted of variation in the general population",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on analysis of population variant data from UK Biobank showing depletion",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "115 individuals with NDD have heterozygous variants in the 18 bp critical region of RNU4-2",
+    "claim_type": "EXPLICIT",
+    "source": "we identify heterozygous variants in 115 individuals with NDD",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from study cohorts",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_individuals_with_variants": 115
+    }
+  },
+  {
+    "claim_id": "C5",
+    "claim": "77.4% of individuals with RNU4-2 variants have the same highly recurrent single base insertion (n.64_65insT)",
+    "claim_type": "EXPLICIT",
+    "source": "Most individuals (77.4%) have the same highly recurrent single base insertion (n.64_65insT).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct calculation from study data: 89 out of 115 individuals",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_recurrent_variant": 89,
+      "n_total": 115,
+      "percentage": {
+        "value": 77.4,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C6",
+    "claim": "In 54 individuals in whom parental allele of origin could be determined, all de novo variants were on the maternal allele",
+    "claim_type": "EXPLICIT",
+    "source": "In 54 individuals in whom it could be determined, the de novo variants were all on the maternal allele.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from phasing analysis",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_maternal_allele": 54,
+      "n_paternal_allele": 0,
+      "n_total_phased": 54
+    }
+  },
+  {
+    "claim_id": "C7",
+    "claim": "RNU4-2 is highly expressed in the developing human brain, in contrast to RNU4-1 and other U4 homologues",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate that RNU4-2 is highly expressed in the developing human brain, in contrast to RNU4-1 and other U4 homologues.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Based on RNA-seq expression analysis from BrainVar dataset",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "5\u2032 splice-site use is systematically disrupted in individuals with RNU4-2 variants",
+    "claim_type": "EXPLICIT",
+    "source": "Using RNA sequencing, we show how 5\u2032 splice-site use is systematically disrupted in individuals with RNU4-2 variants",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "RNA-seq analysis from blood samples of 5 individuals with RNU4-2 variants",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Variants in the 18 base pair region of RNU4-2 explain 0.4% of individuals with NDD",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we estimate that variants in this 18 base pair region explain 0.4% of individuals with NDD.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated estimate based on GEL cohort data accounting for pre-existing diagnostic yield",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ],
+    "expected": {
+      "percentage_of_NDD": {
+        "value": 0.4,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Non-coding RNAs comprise 37.4% of processed exonic RNA sequence in humans",
+    "claim_type": "EXPLICIT",
+    "source": "Non-coding RNAs, which comprise 37.4% of processed exonic RNA sequence in humans5",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 5",
+    "evidence_type": [
+      "CITATION"
+    ],
+    "expected": {
+      "percentage_noncoding_RNA": {
+        "value": 37.4,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C11",
+    "claim": "RNU12 variants cause autosomal recessive early-onset cerebellar ataxia",
+    "claim_type": "EXPLICIT",
+    "source": "RNU12 variants cause autosomal recessive early-onset cerebellar ataxia9",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 9",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "RNU4ATAC variants cause an autosomal recessive multisystem congenital disorder including microcephaly, growth retardation and developmental delay",
+    "claim_type": "EXPLICIT",
+    "source": "RNU4ATAC variants cause an autosomal recessive multisystem congenital disorder including microcephaly, growth retardation and developmental delay (eponyms include Taybi Linder10, Lowry\u2013Wood11 and Roifman syndromes12)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from references 10, 11, and 12",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "The n.64_65insT variant was initially identified as arising de novo in 38 probands recruited for genome sequencing with their unaffected parents",
+    "claim_type": "EXPLICIT",
+    "source": "This variant was initially identified as arising de novo in 38 probands recruited for genome sequencing with their unaffected parents13.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from GEL high-confidence de novo variant dataset",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_de_novo_probands": 38
+    }
+  },
+  {
+    "claim_id": "C14",
+    "claim": "46 individuals with the n.64_65insT variant were identified in 8,841 probands with undiagnosed NDD in GEL, corresponding to 0.52%",
+    "claim_type": "EXPLICIT",
+    "source": "All of the 46 individuals with the variant have undiagnosed NDD (categorized as global developmental delay, intellectual disability and/or autism spectrum disorder), corresponding to 0.52% of 8,841 probands with so far undiagnosed NDD in GEL.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count and percentage calculation from GEL cohort",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant": 46,
+      "n_total_undiagnosed_NDD": 8841,
+      "percentage": {
+        "value": 0.52,
+        "tolerance": 0.01
+      }
+    }
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The n.64_65insT variant was not found in any of 3,408 NDD probands with an existing genetic diagnosis",
+    "claim_type": "EXPLICIT",
+    "source": "The n.64_65insT variant was not found in any of 3,408 NDD probands with an existing genetic diagnosis",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from GEL cohort analysis",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_diagnosed": 0,
+      "n_total_diagnosed": 3408
+    }
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The n.64_65insT variant was not found in 21,817 probands with non-NDD phenotypes in GEL",
+    "claim_type": "EXPLICIT",
+    "source": "The n.64_65insT variant was not found in any of 3,408 NDD probands with an existing genetic diagnosis, 21,817 probands with non-NDD phenotypes",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from GEL cohort analysis",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_non_NDD": 0,
+      "n_total_non_NDD": 21817
+    }
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The n.64_65insT variant was not found in 33,122 unaffected individuals in GEL",
+    "claim_type": "EXPLICIT",
+    "source": "The n.64_65insT variant was not found in any of 3,408 NDD probands with an existing genetic diagnosis, 21,817 probands with non-NDD phenotypes or 33,122 unaffected individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from GEL cohort analysis",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_unaffected": 0,
+      "n_total_unaffected": 33122
+    }
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for global developmental delay (n = 37; OR = 3.56; P = 2.75 \u00d7 10\u22124)",
+    "claim_type": "EXPLICIT",
+    "source": "Individuals with the variant are significantly enriched for global developmental delay (n = 37; odds ratio (OR) = 3.56; Fisher's P = 2.75 \u00d7 10\u22124)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 37,
+      "odds_ratio": 3.56,
+      "p_value": {
+        "value": 0.000275,
+        "tolerance": 1e-05
+      }
+    }
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for delayed gross motor development (n = 26; OR = 2.55; P = 1.64 \u00d7 10\u22123)",
+    "claim_type": "EXPLICIT",
+    "source": "delayed gross motor development (n = 26; OR = 2.55; P = 1.64 \u00d7 10\u22123)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 26,
+      "odds_ratio": 2.55,
+      "p_value": {
+        "value": 0.00164,
+        "tolerance": 0.0001
+      }
+    }
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for microcephaly (n = 26; OR = 6.62; P = 7.87 \u00d7 10\u221210)",
+    "claim_type": "EXPLICIT",
+    "source": "microcephaly (n = 26; OR = 6.62; P = 7.87 \u00d7 10\u221210)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 26,
+      "odds_ratio": 6.62,
+      "p_value": {
+        "value": 7.87e-10,
+        "tolerance": 1e-11
+      }
+    }
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for delayed fine motor development (n = 24; OR = 2.61; P = 1.69 \u00d7 10\u22123)",
+    "claim_type": "EXPLICIT",
+    "source": "delayed fine motor development (n = 24; OR = 2.61; P = 1.69 \u00d7 10\u22123)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 24,
+      "odds_ratio": 2.61,
+      "p_value": {
+        "value": 0.00169,
+        "tolerance": 0.0001
+      }
+    }
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for hypotonia (n = 18; OR = 3.60; P = 7.09 \u00d7 10\u22125)",
+    "claim_type": "EXPLICIT",
+    "source": "hypotonia (n = 18; OR = 3.60; P = 7.09 \u00d7 10\u22125)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 18,
+      "odds_ratio": 3.6,
+      "p_value": {
+        "value": 7.09e-05,
+        "tolerance": 1e-06
+      }
+    }
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for short stature (n = 15; OR = 3.54; P = 2.17 \u00d7 10\u22124)",
+    "claim_type": "EXPLICIT",
+    "source": "short stature (n = 15; OR = 3.54; P = 2.17 \u00d7 10\u22124)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 15,
+      "odds_ratio": 3.54,
+      "p_value": {
+        "value": 0.000217,
+        "tolerance": 1e-05
+      }
+    }
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for drooling (n = 7; OR = 19.2; P = 2.83 \u00d7 10\u22127)",
+    "claim_type": "EXPLICIT",
+    "source": "drooling (n = 7; OR = 19.2; P = 2.83 \u00d7 10\u22127)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 7,
+      "odds_ratio": 19.2,
+      "p_value": {
+        "value": 2.83e-07,
+        "tolerance": 1e-08
+      }
+    }
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Individuals with the n.64_65insT variant are significantly enriched for absent speech (n = 6; OR = 6.23; P = 7.45 \u00d7 10\u22124)",
+    "claim_type": "EXPLICIT",
+    "source": "absent speech (n = 6; OR = 6.23; P = 7.45 \u00d7 10\u22124)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical analysis comparing phenotypes in individuals with variant to all other NDD probands",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_phenotype": 6,
+      "odds_ratio": 6.23,
+      "p_value": {
+        "value": 0.000745,
+        "tolerance": 1e-05
+      }
+    }
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The n.64_65insT variant is not found in 76,215 genome-sequenced individuals in gnomAD v.4.0",
+    "claim_type": "EXPLICIT",
+    "source": "The n.64_65insT variant is not found in 76,215 genome-sequenced individuals in gnomAD v.4.0 (ref. 14)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from gnomAD database",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_gnomAD": 0,
+      "n_total_gnomAD": 76215
+    }
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The n.64_65insT variant is not found in 245,400 individuals in the All of Us dataset",
+    "claim_type": "EXPLICIT",
+    "source": "or in 245,400 individuals in the All of Us dataset15",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from All of Us database",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_AllOfUs": 0,
+      "n_total_AllOfUs": 245400
+    }
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The n.64_65insT variant is seen in a single individual in the UK Biobank (allele frequency of 1.02 \u00d7 10\u22126)",
+    "claim_type": "EXPLICIT",
+    "source": "It is seen in a single individual in the UK Biobank16 (allele frequency of 1.02 \u00d7 10\u22126)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct observation from UK Biobank data",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_UKB": 1,
+      "allele_frequency": {
+        "value": 1.02e-06,
+        "tolerance": 1e-08
+      }
+    }
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The critical 18 bp region shows 26% of all possible SNVs observed in UK Biobank compared to a median of 78% across the rest of the gene",
+    "claim_type": "EXPLICIT",
+    "source": "The recurrent n.64_65insT variant resides within the central region of RNU4-2, towards the 5\u2032 end of an 18 bp region that is depleted of variants in population datasets compared with the rest of the gene (26% of all possible single nucleotide variants (SNVs) observed in UK Biobank compared to a median of 78% across the rest of the gene",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Analysis of variant density in UK Biobank data",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "percentage_SNVs_critical_region": 26,
+      "percentage_SNVs_rest_of_gene_median": 78
+    }
+  },
+  {
+    "claim_id": "C30",
+    "claim": "61 individuals with variants in the critical region were identified in GEL (60 probands and one sibling)",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we identified 115 individuals with variants across this region, including 61 individuals in GEL (60 probands and one more sibling)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from GEL cohort",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_GEL_total": 61,
+      "n_GEL_probands": 60,
+      "n_GEL_siblings": 1
+    }
+  },
+  {
+    "claim_id": "C31",
+    "claim": "54 individuals with variants in the critical region were identified from extra cohorts beyond GEL",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we identified 115 individuals with variants across this region, including 61 individuals in GEL (60 probands and one more sibling) and 54 from extra cohorts",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from multiple cohorts",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_extra_cohorts": 54
+    }
+  },
+  {
+    "claim_id": "C32",
+    "claim": "For 86 of the 115 individuals, sequencing data for both parents were available to confirm that the variants had arisen de novo",
+    "claim_type": "EXPLICIT",
+    "source": "For 86 of the 115 individuals, sequencing data for both parents were available to confirm that the variants had arisen de novo.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from trio sequencing data",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_confirmed_de_novo": 86,
+      "n_total": 115
+    }
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Single base insertion variants in the critical region are strongly enriched in individuals with NDD: 54 out of 8,841 (0.61%) GEL undiagnosed NDD probands compared to 2 out of 490,132 individuals in the UK Biobank (OR = 1,531; 95% CI: 404\u201316,384; P = 3.3 \u00d7 10\u221292)",
+    "claim_type": "EXPLICIT",
+    "source": "Single base insertion variants in this region are strongly enriched in individuals with NDD: 54 out of 8,841 (0.61%) GEL undiagnosed NDD probands (55 out of 10,388 individuals) have single base insertions compared to two out of 490,132 individuals in the UK Biobank (OR = 1,531; 95% confidence interval (CI): 404\u201316,384; Fisher's P = 3.3 \u00d7 10\u221292).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical comparison between GEL NDD cohort and UK Biobank",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_NDD_with_insertion": 54,
+      "n_NDD_total": 8841,
+      "percentage_NDD": {
+        "value": 0.61,
+        "tolerance": 0.01
+      },
+      "n_UKB_with_insertion": 2,
+      "n_UKB_total": 490132,
+      "odds_ratio": 1531,
+      "ci_lower": 404,
+      "ci_upper": 16384,
+      "p_value": {
+        "value": 3.3e-92,
+        "tolerance": 1e-93
+      }
+    }
+  },
+  {
+    "claim_id": "C34",
+    "claim": "There is a modest enrichment of SNVs in GEL NDD probands across the critical region (undiagnosed NDD: 6 out of 8,841; UK Biobank: 35 out of 490,132; OR = 9.51; 95%CI: 3.27\u201322.8; P = 8.16 \u00d7 10\u22125)",
+    "claim_type": "EXPLICIT",
+    "source": "Aside from insertions, there is also a modest enrichment of SNVs in GEL NDD probands across the critical region (undiagnosed NDD: six out of 8,841; UK Biobank: 35 out of 490,132; OR = 9.51; 95%CI: 3.27\u201322.8; Fisher's P = 8.16 \u00d7 10\u22125).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical comparison between GEL NDD cohort and UK Biobank",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_NDD_with_SNV": 6,
+      "n_NDD_total": 8841,
+      "n_UKB_with_SNV": 35,
+      "n_UKB_total": 490132,
+      "odds_ratio": 9.51,
+      "ci_lower": 3.27,
+      "ci_upper": 22.8,
+      "p_value": {
+        "value": 8.16e-05,
+        "tolerance": 1e-06
+      }
+    }
+  },
+  {
+    "claim_id": "C35",
+    "claim": "15 individuals across cohorts were identified with SNVs in the critical region (10 confirmed de novo)",
+    "claim_type": "EXPLICIT",
+    "source": "We identified 15 individuals across cohorts with SNVs in this region (Extended Data Table 1; 10 confirmed de novo)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from multiple cohorts",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_SNV": 15,
+      "n_confirmed_de_novo": 10
+    }
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Across the remainder of RNU4-2 there is no significant enrichment of variants in undiagnosed NDD probands when compared with non-NDD probands (194 out of 7,519 undiagnosed NDD; 521 out of 19,428 non-NDD; OR = 0.96; 95%CI: 0.81\u20131.14; P = 0.67)",
+    "claim_type": "EXPLICIT",
+    "source": "Across the remainder of RNU4-2 there is no significant enrichment of variants in undiagnosed NDD probands when compared with non-NDD probands (194 out of 7,519 undiagnosed NDD; 521 out of 19,428 non-NDD in GEL aggregated variant dataset17; OR = 0.96; 95%CI: 0.81\u20131.14; Fisher's P = 0.67).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical comparison within GEL cohort",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_NDD_with_variant": 194,
+      "n_NDD_total": 7519,
+      "n_non_NDD_with_variant": 521,
+      "n_non_NDD_total": 19428,
+      "odds_ratio": 0.96,
+      "ci_lower": 0.81,
+      "ci_upper": 1.14,
+      "p_value": 0.67
+    }
+  },
+  {
+    "claim_id": "C37",
+    "claim": "60 out of 8,841, or 0.68%, of all genetically undiagnosed NDD probands in GEL have variants in the 18 bp critical region",
+    "claim_type": "EXPLICIT",
+    "source": "This includes 60 out of 8,841, or 0.68%, of all genetically undiagnosed NDD probands in GEL.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count and percentage calculation from GEL cohort",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant": 60,
+      "n_total": 8841,
+      "percentage": {
+        "value": 0.68,
+        "tolerance": 0.01
+      }
+    }
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Variants in the critical region are observed in 39 out of 490,132 (0.008%) individuals in the UK Biobank (OR = 85.8; 95%CI: 56.4\u2013131.6; P = 1.84 \u00d7 10\u221278)",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, variants in this region are observed in 39 out of 490,132 (0.008%) individuals in the UK Biobank (OR = 85.8; 95%CI: 56.4\u2013131.6; Fisher's P = 1.84 \u00d7 10\u221278).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical comparison between GEL NDD cohort and UK Biobank",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_UKB_with_variant": 39,
+      "n_UKB_total": 490132,
+      "percentage_UKB": {
+        "value": 0.008,
+        "tolerance": 0.001
+      },
+      "odds_ratio": 85.8,
+      "ci_lower": 56.4,
+      "ci_upper": 131.6,
+      "p_value": {
+        "value": 1.84e-78,
+        "tolerance": 1e-79
+      }
+    }
+  },
+  {
+    "claim_id": "C39",
+    "claim": "The five individuals with RNU4-2 variants had more abnormal splicing events than 378 control individuals with non-NDD phenotypes (mean 21.6 versus 4.5; Wilcoxon P = 0.0126)",
+    "claim_type": "EXPLICIT",
+    "source": "The five individuals with RNU4-2 variants had more abnormal splicing events than 378 control individuals with non-NDD phenotypes (mean 21.6 versus 4.5; Wilcoxon P = 0.0126)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "RNA-seq analysis comparing individuals with RNU4-2 variants to controls",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_cases": 5,
+      "n_controls": 378,
+      "mean_events_cases": 21.6,
+      "mean_events_controls": 4.5,
+      "p_value": 0.0126
+    }
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The most pronounced difference in RNA-seq was observed for abnormal splicing events corresponding to increased use of unannotated 5\u2032 splice sites (mean 8.8 events in individuals with RNU4-2 variants compared with 0.7 in both 378 unmatched controls and ten matched controls; Wilcoxon P = 4.0 \u00d7 10\u22125 and P = 5.7 \u00d7 10\u22123, respectively)",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with the importance of the critical region in 5\u2032 splice-site recognition, the most pronounced difference was observed for abnormal splicing events corresponding to increased use of unannotated 5\u2032 splice sites (mean 8.8 events in individuals with RNU4-2 variants compared with 0.7 in both 378 unmatched controls and ten controls matched on genetic ancestry, sex and age at consent; Wilcoxon P = 4.0 \u00d7 10\u22125 and P = 5.7 \u00d7 10\u22123, respectively",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "RNA-seq analysis comparing individuals with RNU4-2 variants to controls",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "mean_events_cases": 8.8,
+      "mean_events_unmatched_controls": 0.7,
+      "mean_events_matched_controls": 0.7,
+      "n_unmatched_controls": 378,
+      "n_matched_controls": 10,
+      "p_value_unmatched": {
+        "value": 4e-05,
+        "tolerance": 1e-06
+      },
+      "p_value_matched": {
+        "value": 0.0057,
+        "tolerance": 0.0001
+      }
+    }
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Detailed phenotypic information was collected for 49 individuals (42 with n.64_65insT, three with other single base insertions, and four with SNVs)",
+    "claim_type": "EXPLICIT",
+    "source": "To characterize the phenotypic spectrum associated with variants in RNU4-2, we collected detailed phenotypic information for a subset of 49 individuals (42 with n.64_65insT, three with other single base insertions, and four with SNVs",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from clinical data collection",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_total_phenotyped": 49,
+      "n_with_n64_65insT": 42,
+      "n_with_other_insertions": 3,
+      "n_with_SNVs": 4
+    }
+  },
+  {
+    "claim_id": "C42",
+    "claim": "All 49 phenotyped individuals have moderate to severe global developmental delay and intellectual disability",
+    "claim_type": "EXPLICIT",
+    "source": "Using these data, we find the RNU4-2 syndromic NDD to be characterized by moderate to severe global developmental delay (four children with SNVs with moderate delay) and intellectual disability in all individuals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Clinical phenotype data from 49 individuals",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_GDD_ID": 49,
+      "n_total": 49
+    }
+  },
+  {
+    "claim_id": "C43",
+    "claim": "83% of phenotyped individuals achieved ambulation but at a delayed age (average 3.4 years, range 17 months to 7.5 years)",
+    "claim_type": "EXPLICIT",
+    "source": "Most (83%) achieved ambulation but at a delayed age (average 3.4 years, range 17 months to 7.5 years)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Clinical phenotype data from 49 individuals",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "percentage_ambulatory": 83,
+      "mean_age_ambulation_years": 3.4,
+      "min_age_ambulation_months": 17,
+      "max_age_ambulation_years": 7.5
+    }
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Only three individuals (two with an SNV) had fluent speech",
+    "claim_type": "EXPLICIT",
+    "source": "Only three individuals (two with an SNV) had fluent speech",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Clinical phenotype data from 49 individuals",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_fluent_speech": 3,
+      "n_with_SNV_and_fluent_speech": 2
+    }
+  },
+  {
+    "claim_id": "C45",
+    "claim": "All but three phenotyped individuals were reported to have dysmorphic facial features",
+    "claim_type": "EXPLICIT",
+    "source": "All but three were reported to have dysmorphic facial features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Clinical phenotype data from 49 individuals",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_dysmorphic_features": 46,
+      "n_total": 49
+    }
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Children with SNVs had fewer reports of severe global developmental delay (0 out of 4 versus 34 out of 40, Fisher's P = 0.0015)",
+    "claim_type": "EXPLICIT",
+    "source": "In comparison to the single base insertions, children with SNVs had fewer reports of severe global developmental delay (zero out of four versus 34 out of 40, Fisher's P = 0.0015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Statistical comparison of phenotypes between SNV and insertion groups",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_SNV_severe_GDD": 0,
+      "n_SNV_total": 4,
+      "n_insertion_severe_GDD": 34,
+      "n_insertion_total": 40,
+      "p_value": 0.0015
+    }
+  },
+  {
+    "claim_id": "C47",
+    "claim": "3,408 out of 13,450 individuals (25.3%) in the DDD cohort have at least one read mapping to the position of the n.64_65insT variant in exome sequencing data",
+    "claim_type": "EXPLICIT",
+    "source": "Across the DDD cohort, 3,408 out of 13,450 individuals (25.3%) have at least one read mapping to the position of the n.64_65insT variant",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Analysis of exome sequencing coverage in DDD cohort",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_coverage": 3408,
+      "n_total_DDD": 13450,
+      "percentage_with_coverage": {
+        "value": 25.3,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Of 1,755 individuals in both GEL and DDD, 22 have the n.64_65insT variant (1.3%)",
+    "claim_type": "EXPLICIT",
+    "source": "Of 1,755 individuals in both GEL and DDD, 22 have the n.64_65insT variant (1.3%).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from overlapping cohort analysis",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant": 22,
+      "n_total_overlap": 1755,
+      "percentage": {
+        "value": 1.3,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Two of the 22 individuals with n.64_65insT in both GEL and DDD (9.1%) each have a single read at the variant position in the exome sequencing data from DDD",
+    "claim_type": "EXPLICIT",
+    "source": "Two of the 22 individuals (9.1%) each have a single read at the variant position in the exome sequencing data from DDD",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Analysis of exome sequencing reads in DDD cohort",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_single_read": 2,
+      "n_total_with_variant": 22,
+      "percentage": {
+        "value": 9.1,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C50",
+    "claim": "RNU4-2 and RNU4-1 are contiguous on chr. 12, both 141 bp long and highly homologous, differing by four nucleotides (97.2% similarity)",
+    "claim_type": "EXPLICIT",
+    "source": "RNU4-2 and RNU4-1 are contiguous on chr. 12, both 141 bp long and highly homologous, differing by four nucleotides (97.2% similarity).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Genomic sequence comparison",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ],
+    "expected": {
+      "length_bp": 141,
+      "n_different_nucleotides": 4,
+      "percentage_similarity": {
+        "value": 97.2,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C51",
+    "claim": "RNU4-2 is consistently expressed at a significantly higher level than RNU4-1 in the prefrontal cortex",
+    "claim_type": "EXPLICIT",
+    "source": "The expression of RNU4-1 and RNU4-2 is tightly correlated (Supplementary Fig. 5), however, RNU4-2 is consistently expressed at a significantly higher level than RNU4-1 (Fig. 5a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "RNA-seq expression analysis from BrainVar dataset",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The largest proportion of NDD explained by a single gene in 13,449 individuals in the DDD cohort was 0.68% for ANKRD11",
+    "claim_type": "EXPLICIT",
+    "source": "As a comparison, the largest proportion of NDD explained by a single gene in 13,449 individuals in the DDD cohort1 was 0.68% for ANKRD11",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 1 (DDD cohort analysis)",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ],
+    "expected": {
+      "n_DDD_cohort": 13449,
+      "percentage_ANKRD11": {
+        "value": 0.68,
+        "tolerance": 0.01
+      }
+    }
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The rate of RNU4-2 variants is much lower in cohorts recruited primarily for autism spectrum disorder (three out of 7,149; 0.042% across the SSC, SPARK and MSSNG cohorts)",
+    "claim_type": "EXPLICIT",
+    "source": "This is consistent with the much lower rate of RNU4-2 variants in cohorts recruited primarily for autism spectrum disorder (for example, three out of 7,149; 0.042% across the Simons Simplex Collection (SSC)24, SPARK25 and MSSNG26).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from autism cohorts",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant_ASD": 3,
+      "n_total_ASD": 7149,
+      "percentage_ASD": {
+        "value": 0.042,
+        "tolerance": 0.001
+      }
+    }
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The most recurrent protein-coding variant in a dataset of 31,058 individuals with developmental disorders is observed in 36 individuals (0.12%; GRCh38:chr. 11: 66211206:C:T; PACS1:p.Arg203Trp)",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, the most recurrent protein-coding variant in a dataset of 31,058 individuals with developmental disorders29 is observed in 36 individuals (0.12%; GRCh38:chr. 11: 66211206:C:T; PACS1:p.Arg203Trp).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 29",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ],
+    "expected": {
+      "n_with_variant": 36,
+      "n_total": 31058,
+      "percentage": {
+        "value": 0.12,
+        "tolerance": 0.01
+      }
+    }
+  },
+  {
+    "claim_id": "C55",
+    "claim": "There is no association between maternal age and the n.64_65insT variant in GEL (mean 30.2 compared to 29.7 across other NDD probands)",
+    "claim_type": "EXPLICIT",
+    "source": "We do not see an association with maternal age for individuals with n.64_65insT in GEL (mean 30.2 compared to 29.7 across other NDD probands; Extended Data Fig. 4).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical comparison of maternal age between groups",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "mean_maternal_age_variant": 30.2,
+      "mean_maternal_age_other_NDD": 29.7
+    }
+  },
+  {
+    "claim_id": "C56",
+    "claim": "A median of 76% of all possible SNVs in RNU4-2 are observed in UK Biobank compared with 13% on average in intergenic sequences of the same length (141 bp; P < 0.001)",
+    "claim_type": "EXPLICIT",
+    "source": "A median of 76% of all possible SNVs in RNU4-2 are observed compared with 13% on average in the intergenic sequences of the same length (141 bp; P < 0.001, Monte Carlo Fisher-Pitman test).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Statistical comparison of variant density between RNU4-2 and intergenic regions",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "percentage_SNVs_RNU4_2": 76,
+      "percentage_SNVs_intergenic": 13,
+      "sequence_length_bp": 141,
+      "p_value_less_than": 0.001
+    }
+  },
+  {
+    "claim_id": "C57",
+    "claim": "All observed variants in RNU4-2 in the UK Biobank are very rare (maximum allele frequency 0.025%)",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the high number of variants in RNU4-2 in the UK Biobank, there are no individuals with homozygous variants and all observed variants are very rare (maximum allele frequency 0.025%)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Analysis of variant frequencies in UK Biobank",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "max_allele_frequency": {
+        "value": 0.00025,
+        "tolerance": 1e-05
+      }
+    }
+  },
+  {
+    "claim_id": "C58",
+    "claim": "There are no individuals with homozygous variants in RNU4-2 in the UK Biobank",
+    "claim_type": "EXPLICIT",
+    "source": "Despite the high number of variants in RNU4-2 in the UK Biobank, there are no individuals with homozygous variants",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Analysis of genotypes in UK Biobank",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_homozygous": 0
+    }
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Eleven of 12 shared abnormal splicing events (91.6%) in individuals with RNU4-2 variants corresponded to an increase in unannotated 5\u2032 splice-site use",
+    "claim_type": "EXPLICIT",
+    "source": "Eleven of these 12 events (91.6%) corresponded to an increase in unannotated 5\u2032 splice-site use.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "RNA-seq analysis of shared splicing events",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_unannotated_5prime_events": 11,
+      "n_total_shared_events": 12,
+      "percentage": {
+        "value": 91.6,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C60",
+    "claim": "None of the 12 shared abnormal splicing events were identified in any of the 378 controls",
+    "claim_type": "EXPLICIT",
+    "source": "None of these shared events were identified in any of the 378 controls.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "RNA-seq analysis comparing cases to controls",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_controls_with_shared_events": 0,
+      "n_total_controls": 378
+    }
+  },
+  {
+    "claim_id": "C61",
+    "claim": "When randomly sampling five control individuals across 10,000 permutations, the mean number of events shared by two or more individuals was 0.007, significantly fewer than the 12 in RNU4-2 individuals (permutation P < 1 \u00d7 10\u22124)",
+    "claim_type": "EXPLICIT",
+    "source": "By contrast, when randomly sampling five control individuals across 10,000 permutations, the mean number of events shared by two or more individuals was 0.007, significantly fewer than the 12 in RNU4-2 individuals (permutation P < 1 \u00d7 10\u22124",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Permutation testing of shared splicing events",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_permutations": 10000,
+      "mean_shared_events_controls": 0.007,
+      "n_shared_events_cases": 12,
+      "p_value_less_than": {
+        "value": 0.0001,
+        "tolerance": 1e-05
+      }
+    }
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Five of the genes implicated in the 12 shared splicing events are in the DDG2P database and/or were associated with NDD in a previous large-scale analysis (NDUFV1, H2AC6, JMJD1C, MAP4K4 and SF1)",
+    "claim_type": "EXPLICIT",
+    "source": "Five of the genes implicated in the 12 shared events are in the Developmental Disorders Genotype-to-Phenotype (DDG2P) database21 and/or were associated with NDD in a previous large-scale analysis22 (NDUFV1, H2AC6, JMJD1C, MAP4K4 and SF1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cross-reference with DDG2P database and previous NDD study",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ],
+    "expected": {
+      "n_genes_in_DDG2P_or_NDD": 5,
+      "n_total_shared_events": 12
+    }
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Ten of the 12 shared splicing events affect the protein-coding sequence, with four predicted to cause a frameshift",
+    "claim_type": "EXPLICIT",
+    "source": "Ten of the 12 shared events affect the protein-coding sequence, with four predicted to cause a frameshift",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Analysis of predicted consequences of shared splicing events",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_affecting_coding_sequence": 10,
+      "n_frameshift": 4,
+      "n_total_shared_events": 12
+    }
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Unannotated 5\u2032 splice sites with increased use have an increase in T at the +3 position (8 out of 19 versus 0 out of 36; Fisher's P = 6.2 \u00d7 10\u22125; OR = Inf; 95%CI: 5.92-Inf)",
+    "claim_type": "EXPLICIT",
+    "source": "5\u2032 splice sites with increased use (top) have an increase in T at the +3 position (eight out of 19 versus zero out of 36; Fisher's P = 6.2 \u00d7 10\u22125; OR = Inf; 95%CI: 5.92-Inf)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Sequence motif analysis of 5\u2032 splice sites from RNA-seq data",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_increased_with_T_at_plus3": 8,
+      "n_increased_total": 19,
+      "n_decreased_with_T_at_plus3": 0,
+      "n_decreased_total": 36,
+      "p_value": {
+        "value": 6.2e-05,
+        "tolerance": 1e-06
+      }
+    }
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Unannotated 5\u2032 splice sites with increased use have an increase in C at the +4 position (4 out of 19 versus 0 out of 36; Fisher's P = 0.011; OR = Inf; 95%CI: 1.37-Inf)",
+    "claim_type": "EXPLICIT",
+    "source": "an increase in C at the +4 (four out of 19 versus zero out of 36; Fisher's P = 0.011; OR = Inf; 95%CI: 1.37-Inf)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Sequence motif analysis of 5\u2032 splice sites from RNA-seq data",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_increased_with_C_at_plus4": 4,
+      "n_increased_total": 19,
+      "n_decreased_with_C_at_plus4": 0,
+      "n_decreased_total": 36,
+      "p_value": 0.011
+    }
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Unannotated 5\u2032 splice sites with increased use have an increase in C at the +5 position (6 out of 19 versus 1 out of 36; Fisher's P = 0.0051; OR = 15.3; 95%CI: 2.09-Inf)",
+    "claim_type": "EXPLICIT",
+    "source": "and +5 (six out of 19 versus 1/36; Fisher's P = 0.0051; OR = 15.3; 95%CI: 2.09-Inf)) positions compared to decreased 5\u2032 splice sites",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Sequence motif analysis of 5\u2032 splice sites from RNA-seq data",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_increased_with_C_at_plus5": 6,
+      "n_increased_total": 19,
+      "n_decreased_with_C_at_plus5": 1,
+      "n_decreased_total": 36,
+      "p_value": 0.0051,
+      "odds_ratio": 15.3,
+      "ci_lower": 2.09
+    }
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The 18 bp critical region of RNU4-2 is defined as chr. 12: 120291825\u2013120291842",
+    "claim_type": "EXPLICIT",
+    "source": "On the basis of the population variant data, we defined a critical, highly constrained region as chr. 12: 120291825\u2013120291842.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Definition based on variant depletion analysis",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "chromosome": 12,
+      "start_position": 120291825,
+      "end_position": 120291842,
+      "length_bp": 18
+    }
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The highly recurrent n.64_65insT variant is located at GRCh38:chr. 12: 120291839:T:TA",
+    "claim_type": "EXPLICIT",
+    "source": "We identified a highly recurrent single base insertion (GRCh38:chr. 12: 120291839:T:TA; n.64_65insT) in RNU4-2 in GEL1.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Genomic coordinates from variant calling",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "chromosome": 12,
+      "position": 120291839,
+      "ref": "T",
+      "alt": "TA"
+    }
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The recurrent n.77_78insT variant is located at GRCh38:chr. 12: 120291826:T:TA and is seen in six individuals, two of whom are affected siblings",
+    "claim_type": "EXPLICIT",
+    "source": "including n.77_78insT (GRCh38:chr. 12: 120291826:T:TA), which is seen in six individuals, two of whom are affected siblings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Genomic coordinates and count from variant calling",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "chromosome": 12,
+      "position": 120291826,
+      "ref": "T",
+      "alt": "TA",
+      "n_individuals": 6,
+      "n_affected_siblings": 2
+    }
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The protein-coding genome comprises roughly 1.5% of the total genome",
+    "claim_type": "EXPLICIT",
+    "source": "So far, most known disease-causing variants are in the roughly 1.5% of the genome that directly encodes proteins3.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 3, representing established knowledge",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ],
+    "expected": {
+      "percentage_protein_coding": {
+        "value": 1.5,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The non-coding genome makes up 98.5% of the total genome",
+    "claim_type": "IMPLICIT",
+    "source": "By contrast, the non-coding genome (which makes up the remaining 98.5%) has been relatively unexplored",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated as complement to protein-coding genome percentage",
+    "evidence_type": [
+      "INFERENCE"
+    ],
+    "expected": {
+      "percentage_noncoding": {
+        "value": 98.5,
+        "tolerance": 0.1
+      }
+    }
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The GEL cohort includes 8,841 probands with genetically undiagnosed NDD",
+    "claim_type": "EXPLICIT",
+    "source": "Using a cohort of 8,841 probands with genetically undiagnosed NDD in the Genomics England 100,000 genomes project (GEL)4",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct count from GEL cohort definition",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_undiagnosed_NDD_probands": 8841
+    }
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The critical region maps to U4 nucleotides 62\u201379",
+    "claim_type": "EXPLICIT",
+    "source": "The 18 bp critical region in RNU4-2 maps to a region of U4 between the stem I region of complementary base pairing to U6 and the 3\u2032 stem\u2013loop structures (nucleotides 62\u201379",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Mapping based on structural analysis",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ],
+    "expected": {
+      "start_nucleotide": 62,
+      "end_nucleotide": 79
+    }
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The critical region is loaded into the active site of the SNRNP200-encoded BRR2 helicase",
+    "claim_type": "EXPLICIT",
+    "source": "This region is known to be loaded into the active site of the SNRNP200-encoded BRR2 helicase, which mediates spliceosome activation by unwinding the U4/U6 duplex2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Cited from reference 2, representing established structural knowledge",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The BrainVar dataset includes bulk-tissue RNA-seq data from 176 de-identified postmortem samples of the dorsolateral prefrontal cortex or frontal cerebral wall",
+    "claim_type": "EXPLICIT",
+    "source": "This dataset includes bulk-tissue RNA-seq data from 176 de-identified postmortem samples of the dorsolateral prefrontal cortex (DLPFC, n = 167 older than ten postconception weeks) or frontal cerebral wall (n = 9 younger than ten postconception weeks), ranging from six postconception weeks to 20 years of age.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Description of BrainVar dataset composition",
+    "evidence_type": [
+      "DATA"
+    ],
+    "expected": {
+      "n_total_samples": 176,
+      "n_DLPFC": 167,
+      "n_frontal_cerebral_wall": 9
+    }
+  }
+]
